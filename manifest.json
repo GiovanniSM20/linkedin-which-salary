@@ -1,0 +1,19 @@
+{
+
+  "description": "Adds new button for canned answers on LinkedIn",
+  "manifest_version": 2,
+  "name": "Which Salary ?",
+  "version": "1.0",
+  "homepage_url": "https://github.com/GiovanniSM20/linkedin-which-salary",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["which-salary.js"]
+    }
+  ]
+
+}
